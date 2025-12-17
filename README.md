@@ -15,6 +15,9 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
+
+
+
 src/
 
 ├── components/           # 通用可复用组件
@@ -67,14 +70,6 @@ src/
 
 │
 
-├── services/            # API服务
-
-│   ├── userService.js
-
-│   └── authService.js
-
-│
-
 ├── utils/               # 工具函数
 
 │   ├── formatters.js
@@ -86,6 +81,10 @@ src/
 ├── constants/           # 常量
 
 │   └── routes.js
+
+├── routes/           # 常量
+
+│   └── index.jsx
 
 │
 

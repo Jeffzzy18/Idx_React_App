@@ -1,0 +1,147 @@
+/* 颜色系统 */
+:root {
+    /* 主色系 */
+    --primary-color: #007bff;
+    --primary-light: #e7f1ff;
+    --primary-dark: #0056b3;
+    
+    /* 状态色 */
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --error-color: #dc3545;
+    --info-color: #17a2b8;
+    
+    /* 中性色 */
+    --white: #ffffff;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+    --black: #000000;
+    
+    /* 文字颜色 */
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --text-disabled: #9ca3af;
+    
+    /* 背景颜色 */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9fafb;
+    --bg-tertiary: #f3f4f6;
+    
+    /* 边框颜色 */
+    --border-color: #e5e7eb;
+    --border-color-light: #f3f4f6;
+    --border-color-dark: #d1d5db;
+  }
+  
+  /* 字体系统 */
+  :root {
+    --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    --font-family-mono: 'SFMono-Regular', 'Monaco', 'Courier New', monospace;
+    
+    /* 字号 */
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 30px;
+    
+    /* 行高 */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+    
+    /* 字重 */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+  }
+  
+  /* 间距系统 */
+  :root {
+    --spacing-0: 0;
+    --spacing-2: 2px;
+    --spacing-4: 4px;
+    --spacing-6: 6px;
+    --spacing-8: 8px;
+    --spacing-12: 12px;
+    --spacing-16: 16px;
+    --spacing-20: 20px;
+    --spacing-24: 24px;
+    --spacing-32: 32px;
+    --spacing-40: 40px;
+    --spacing-48: 48px;
+    --spacing-56: 56px;
+    --spacing-64: 64px;
+  }
+  
+  /* 圆角系统 */
+  :root {
+    --radius-none: 0;
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-2xl: 16px;
+    --radius-full: 9999px;
+  }
+  
+  /* 阴影系统 */
+  :root {
+    --shadow-none: none;
+    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* 过渡和动画 */
+  :root {
+    --transition-fast: 150ms ease-in-out;
+    --transition-base: 250ms ease-in-out;
+    --transition-slow: 350ms ease-in-out;
+    
+    --cubic-ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --cubic-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --cubic-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* 断点 (用于响应式设计) */
+  :root {
+    --breakpoint-xs: 320px;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+  }
+  
+  /* 深色模式 */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text-primary: #f9fafb;
+      --text-secondary: #d1d5db;
+      --text-disabled: #6b7280;
+      
+      --bg-primary: #111827;
+      --bg-secondary: #1f2937;
+      --bg-tertiary: #374151;
+      
+      --border-color: #374151;
+      --border-color-light: #1f2937;
+      --border-color-dark: #4b5563;
+    }
+  }
