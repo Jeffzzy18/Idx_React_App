@@ -1,6 +1,6 @@
 import { supabase } from '../config/supabase.config';
 
-export const UserService = {
+export const UserInfoService = {
   async getUsers() {
     const { data, error } = await supabase.from('user_info').select('*');
     if (error) {
